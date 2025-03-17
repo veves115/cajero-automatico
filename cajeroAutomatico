@@ -26,15 +26,3 @@ public class Cuenta {
     public void setBalance(double balance){this.balance = balance;}
 }
 
-//Clase main
-
-public class Main {
-    public static void main(String[] args) {
-        CajeroAutomatico cajero = new CajeroAutomatico();
-        while (true){
-            if (cajero.autenticar()){
-                cajero.mostrarMenuPrincipal();
-            }
-        }
-    }
-}

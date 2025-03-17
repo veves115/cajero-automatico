@@ -1,0 +1,12 @@
+package CajeroAutomatico;
+
+public class Main {
+    public static void main(String[] args) {
+        CajeroAutomatico cajero = new CajeroAutomatico();
+        while (true){
+            if (cajero.autenticar()){
+                cajero.mostrarMenuPrincipal();
+            }
+        }
+    }
+}
